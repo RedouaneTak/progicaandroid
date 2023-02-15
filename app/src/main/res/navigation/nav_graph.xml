@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/giteListFragment">
+
+    <fragment
+        android:id="@+id/giteListFragment"
+        android:name="com.example.progica_android.ui.GiteListFragment"
+        android:label="GiteListFragment">
+        <action
+            android:id="@+id/action_giteListFragment_to_giteDetailFragment"
+            app:destination="@+id/giteDetailFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/giteDetailFragment"
+        android:name="com.example.progica_android.ui.GiteDetailFragment"
+        android:label="fragment_gite_detail"
+        tools:layout="@layout/fragment_gite_detail">
+
+    </fragment>
+
+
+</navigation>
